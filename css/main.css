@@ -340,16 +340,88 @@ main {
 ========================================================
 ============================================================ */
 
+/* Planshet */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .events {
+    padding: 40px;
+    gap: 24px;
+  }
+
+  .search {
+    width: min(480px, 65%);
+  }
+
+  .countries {
+    padding: 0 40px 40px;
+    gap: 32px;
+  }
+
+  .country {
+    width: calc((100% - 64px) / 3);
+  }
+}
+
+/* Kichik planshet va katta telefon */
+@media (max-width: 768px) {
+  .navbar {
+    height: 72px;
+    padding: 0 24px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .mode-part p {
+    font-size: 14px;
+  }
+
+  .events {
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .search {
+    width: 100%;
+    height: 56px;
+  }
+
+  .filter-wrapper {
+    width: 200px;
+  }
+
+  .countries {
+    padding: 0 24px 32px;
+    gap: 24px;
+  }
+
+  .country {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .country img {
+    height: 180px;
+  }
+}
+
 /* Telefon */
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .navbar {
     height: 80px;
     padding: 0 16px;
   }
 
   .title {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
   }
 
   .mode-part {
@@ -366,40 +438,22 @@ main {
   }
 
   .events {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
     padding: 24px 16px 32px;
-    gap: 40px;
-    box-sizing: border-box;
+    gap: 32px;
   }
 
   .search {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 343px;
     height: 48px;
-    padding: 0 16px;
+    padding: 14px 16px;
     gap: 12px;
-    box-sizing: border-box;
-  }
-
-  .search img {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
   }
 
   .search input {
-    width: 100%;
-    min-width: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .search input::placeholder {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .filter-wrapper {
@@ -407,52 +461,28 @@ main {
   }
 
   .filter {
-    width: 200px;
     height: 48px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  .region-options {
-    position: absolute;
-    top: 52px;
-    left: 0;
-    width: 200px;
-    height: 160px;
-    padding: 8px 0;
-    box-sizing: border-box;
-    background-color: var(--primary-color);
-    color: var(--thrird-color);
-    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    z-index: 10;
-  }
-
-  .region-options p {
-    padding: 4px 16px;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0;
-    cursor: pointer;
+    padding: 0 16px;
   }
 
   .countries {
-    padding: 0 16px;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    padding: 0 40px 32px;
+    gap: 32px;
+    justify-content: center;
   }
 
   .country {
-    width: 264px;
-    max-width: 100%;
-    margin-bottom: 0;
+    width: 100%;
+    max-width: 320px;
+    min-height: 0;
   }
 
   .country img {
-    width: 100%;
+    height: 180px;
+  }
+
+  .country h2 {
+    margin: 20px 24px 12px;
+    font-size: 18px;
   }
 }
