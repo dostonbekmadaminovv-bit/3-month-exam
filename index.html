@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar container">
+        <h2 class="title">Where in the world?</h2>
+        <div id="mode-btn" class="mode-part">
+          <img id="mode-img" src="./images/moon.svg" alt="" />
+          <p id="mode-text">Dark Mode</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="events container">
+        <div class="search">
+          <img src="./images/search-light.svg" alt="" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a country…"
+          />
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter" id="filter-btn">
+            <p>Filter by Region</p>
+            <img id="fIcon" src="./images/filter-icon-light.svg" alt="Filter" />
+          </div>
+
+          <div class="region-options" id="region-options">
+            <p data-region="all">All</p>
+            <p data-region="Africa">Africa</p>
+            <p data-region="Americas">Americas</p>
+            <p data-region="Asia">Asia</p>
+            <p data-region="Europe">Europe</p>
+            <p data-region="Oceania">Oceania</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="countries"></div>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
